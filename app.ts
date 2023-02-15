@@ -28,10 +28,8 @@ input.addEventListener("keyup",()=>{
 console.log(input.value);
 let exp=new RegExp(`${input.value}`,"i");
 articleArray.forEach((article)=>{
-    if (article.search(exp)== -1){
-        console.log("not found")
-        /* articleBox.textContent="No matches";
-        card?.appendChild(articleBox); */
+    if (article.search(exp) == -1){
+        console.log("not found");
     } else {
         console.log("found",article);
         let title=document.createElement("p");

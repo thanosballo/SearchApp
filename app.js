@@ -34,8 +34,6 @@ input.addEventListener("keyup", () => {
         articleArray.forEach((article) => {
             if (article.search(exp) == -1) {
                 console.log("not found");
-                /* articleBox.textContent="No matches";
-                card?.appendChild(articleBox); */
             }
             else {
                 console.log("found", article);
